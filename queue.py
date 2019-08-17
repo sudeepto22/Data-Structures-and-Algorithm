@@ -36,14 +36,15 @@ class Queue:
             self._print_queue(node.next)
 
 
-queue = Queue()
-for i in range(1, 11):
-    queue.enqueue(i)
+if __name__ == '__main__':
+    queue = Queue()
+    for i in range(1, 11):
+        queue.enqueue(i)
 
-print(queue.dequeue())
-print(queue.dequeue())
-print(queue.dequeue())
-print(queue.dequeue())
-print(queue.dequeue())
-print('Queue -->')
-queue.print_queue()
+    print(queue.dequeue())
+    print(queue.dequeue())
+    print(queue.dequeue())
+    print(queue.dequeue())
+    print(queue.dequeue())
+    print('Queue -->')
+    queue.print_queue()

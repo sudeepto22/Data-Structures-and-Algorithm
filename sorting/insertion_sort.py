@@ -1,4 +1,10 @@
-def insertion_sort(nums_array):
+def insertion_sort(nums_array: list) -> list:
+    """
+    Insertion Sort
+
+    :param nums_array: list
+    :return nums_array: list
+    """
     for i in range(1, len(nums_array)):
         n = nums_array[i]
         index = i - 1
@@ -9,5 +15,6 @@ def insertion_sort(nums_array):
     return nums_array
 
 
-lst = [54, 23, 45, 12, 37, 89, 21]
-print(insertion_sort(lst))
+if __name__ == '__main__':
+    lst = [54, 23, 45, 12, 37, 89, 21]
+    print(insertion_sort(lst))

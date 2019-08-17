@@ -70,25 +70,24 @@ class BST:
             print(node.data, end=' ')
 
 
-bst = BST()
-bst.insert(4)
-bst.insert(2)
-bst.insert(5)
-bst.insert(1)
-bst.insert(6)
-bst.insert(9)
-bst.insert(3)
-bst.insert(8)
+if __name__ == '__main__':
+    bst = BST()
+    bst.insert(4)
+    bst.insert(2)
+    bst.insert(5)
+    bst.insert(1)
+    bst.insert(6)
+    bst.insert(9)
+    bst.insert(3)
+    bst.insert(8)
 
-print('In-Order Traversal -->')
-bst.inorder_traversal()
-print()
+    print('In-Order Traversal -->')
+    bst.inorder_traversal()
+    print()
 
-print('Pre-Order Traversal -->')
-bst.preorder_traversal()
-print()
+    print('Pre-Order Traversal -->')
+    bst.preorder_traversal()
+    print()
 
-print('Post-Order Traversal -->')
-bst.postorder_traversal()
-
-
+    print('Post-Order Traversal -->')
+    bst.postorder_traversal()

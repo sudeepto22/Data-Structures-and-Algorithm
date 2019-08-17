@@ -36,9 +36,10 @@ class LinkedList:
             self._print_linkedlist(node.next)
 
 
-linkedlist = LinkedList()
-for i in range(1, 11):
-    linkedlist.insert(i)
+if __name__ == '__main__':
+    linkedlist = LinkedList()
+    for i in range(1, 11):
+        linkedlist.insert(i)
 
-linkedlist.insert_first(12)
-linkedlist.print_linkedlist()
+    linkedlist.insert_first(12)
+    linkedlist.print_linkedlist()

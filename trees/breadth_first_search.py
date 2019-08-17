@@ -22,13 +22,14 @@ def bfs(root):
             queue.append(pop_node.right)
 
 
-node = Node(4)
-node.left = Node(2)
-node.right = Node(5)
-node.left.left = Node(1)
-node.left.right = Node(3)
-node.right.right = Node(6)
-node.right.right.right = Node(9)
-node.right.right.right.left = Node(8)
+if __name__ == '__main__':
+    node = Node(4)
+    node.left = Node(2)
+    node.right = Node(5)
+    node.left.left = Node(1)
+    node.left.right = Node(3)
+    node.right.right = Node(6)
+    node.right.right.right = Node(9)
+    node.right.right.right.left = Node(8)
 
-bfs(node)
+    bfs(node)

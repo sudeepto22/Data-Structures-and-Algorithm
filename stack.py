@@ -34,14 +34,15 @@ class Stack:
             self._print_stack(node.next)
 
 
-stack = Stack()
-for i in range(1, 11):
-    stack.push(i)
-print(stack.pop())
-print(stack.pop())
-print(stack.pop())
-print(stack.pop())
-print(stack.pop())
-print(stack.pop())
-print('Stack -->')
-stack.print_stack()
+if __name__ == '__main__':
+    stack = Stack()
+    for i in range(1, 11):
+        stack.push(i)
+    print(stack.pop())
+    print(stack.pop())
+    print(stack.pop())
+    print(stack.pop())
+    print(stack.pop())
+    print(stack.pop())
+    print('Stack -->')
+    stack.print_stack()
